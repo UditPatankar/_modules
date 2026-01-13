@@ -139,9 +139,11 @@ Convert **existing problems** into functions:
 
 Only do the following:
 
-1. Swap two numbers using pointers
+<!-- 1. Swap two numbers using pointers
 2. Access array elements using pointer
-3. Pass array to function using pointer
+3. Linear Search using pointers
+4. Reverse array using pointers ONLY
+5. Pass array to function using pointer -->
 
 ❌ Skip:
 
