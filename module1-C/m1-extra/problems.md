@@ -1,14 +1,6 @@
 # 📌 Module 1 — Problem Solving with C (NQT-Focused)
 
-This module is **not about finishing syllabus**. It is about **building core logic patterns** that repeatedly appear in:
-
-- TCS NQT
-- campus coding rounds
-- basic technical interviews
-
-Do **only these problems**, properly. Nothing extra.
-
----
+## This module is **not about finishing syllabus**. It is about **building core logic patterns** that repeatedly appear in:
 
 ## ❌ What NOT to Do
 
@@ -17,23 +9,7 @@ Do **only these problems**, properly. Nothing extra.
 - Do NOT overuse pointers
 - Do NOT jump topics for speed
 
-> **Patterns matter more than quantity.**
-
----
-
-## ✅ What Success Looks Like
-
-- Zero hesitation with conditions & loops
-- Ability to write logic before code
-- Confidence when seeing a new basic problem
-
-If you achieve this, Module 1 has done its job.
-
----
-
 # 🧱 SECTION 1: INPUT–OUTPUT & CONDITIONS (FOUNDATION)
-
-Do these until they feel **boring**.
 
 <!-- 1. Read two numbers, print the larger
 2. Check whether a number is even or odd
@@ -43,13 +19,9 @@ Do these until they feel **boring**.
 6. Find grade from marks
 7. Simple calculator using `switch` -->
 
-**Goal:** No hesitation with `if–else`, `else if`, `switch`.
-
 ---
 
 # 🔁 SECTION 2: LOOPS (MOST IMPORTANT)
-
-These are **non-negotiable**.
 
 ## Number-based Problems
 
@@ -71,14 +43,11 @@ These are **non-negotiable**.
 - Right-angled triangle
  -->
 
-**Goal:** Loop + condition thinking must become **automatic**.
-
 ---
 
 # 🔢 SECTION 3: MATHEMATICAL LOGIC (NQT FAVORITE)
 
-<!-- These will feel hard at first. That’s expected.
-
+<!--
 1. GCD (Euclid’s method)
 2. LCM using GCD
 3. Factorial (using loop + function)
@@ -86,13 +55,9 @@ These are **non-negotiable**.
 5. Power of a number (without using `pow`)
 6. Sum of digits of a number -->
 
-> If these feel uncomfortable → you are learning correctly.
-
 ---
 
 # 📦 SECTION 4: ARRAYS (CRITICAL FOR DSA LATER)
-
-Do NOT rush this section.
 
 <!-- 1. Read and print array elements
 2. Find largest and smallest element
@@ -101,9 +66,20 @@ Do NOT rush this section.
 5. Reverse an array
 6. Linear search in array
 7. Sort array (Bubble sort only)
-8. Find second largest element -->
+8. Find second largest element
 
-**Goal:** Indexing clarity and loop control.
+#2D Array:
+
+9. **Read and Print**: Read rows/cols and elements, then print the matrix row by row.
+10. **Row Sum**: Calculate and print the sum of each individual row.
+11. **Column Sum**: Calculate and print the sum of each individual column.
+12. **Transpose**: Convert rows into columns using `transpose[j][i] = matrix[i][j]`.
+13. **Square Check**: Determine if the number of rows equals the number of columns.
+14. **Primary Diagonal**: Sum all elements where row index  column index .
+15. **Upper Triangle**: Sum all elements where column index  row index .
+16. **Lower Triangle**: Sum all elements where row index  column index .
+17.  **Addition**: Sum two matrices of identical dimensions element-wise.
+18. **Multiplication**: Multiply two matrices if `cols1 == rows2`.
 
 ---
 
@@ -122,16 +98,10 @@ These come **directly** in NQT.
 
 # 🧩 SECTION 6: FUNCTIONS (STRUCTURE THINKING)
 
-Do NOT add new problems here.
-
-Convert **existing problems** into functions:
-
 <!-- - `factorial()`
 - `isPrime()`
 - `gcd()`
 - `isPalindrome()` -->
-
-**Goal:** Learn decomposition, not new logic.
 
 ---
 
@@ -150,9 +120,7 @@ Only do the following:
 - Pointer arithmetic tricks
 - Double pointers
 
-Low ROI for now.
-
----
+## Low ROI for now.
 
 # 🚫 SECTION 8: FILE HANDLING & STRUCTURES
 
@@ -176,14 +144,5 @@ For **every single problem**:
 5. Rewrite the same problem after 2 days **without looking**
 
 > If you skip step 1, you are lying to yourself.
-
----
-
-# ⏱️ DAILY TARGET
-
-- **2–3 problems per day**, fully understood
-- Not 10 half-done ones
-
-Slow + correct **beats** fast + confused.
 
 ---
