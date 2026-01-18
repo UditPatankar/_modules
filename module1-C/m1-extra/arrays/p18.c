@@ -33,7 +33,6 @@ int main() {
          for(int k = 0; k < cols1; k++) { // for column of m1
             m3[i][j] += m1[i][k] * m2[k][j];
          }
-
          printf("%d ", m3[i][j]);
       }
       printf("\n");

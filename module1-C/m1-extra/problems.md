@@ -80,6 +80,7 @@
 16. **Lower Triangle**: Sum all elements where row index  column index .
 17.  **Addition**: Sum two matrices of identical dimensions element-wise.
 18. **Multiplication**: Multiply two matrices if `cols1 == rows2`.
+19. Identity Matrix Check: This is a square matrix where the diagonal elements are all 1 and everything else is 0.
 
 ---
 
