@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+#pragma region Mypatterns
+
 void print_01(int n) {
     for(int i = 1; i <= n; i++) {
         for(int j = 1; j <= n; j++) {
@@ -282,49 +284,77 @@ void print_19(int n) {
     
 }
 
+
+#pragma endregion
+
+void divider(string s);
+
 int main() {
     
     int n;
     cin >> n;
     
-    cout << "_________\n01:\n\n";
+    divider("01");
     print_01(n);
-    cout << "_________\n02:\n\n";
+    
+    divider("02");
     print_02(n);
-    cout << "_________\n03:\n\n";
+    
+    divider("03");
     print_03(n);
-    cout << "_________\n04:\n\n";
+    
+    divider("04");
     print_04(n);
-    cout << "_________\n05:\n\n";
+    
+    divider("05");
     print_05(n);
-    cout << "_________\n06:\n\n";
+    
+    divider("06");
     print_06(n);
-    cout << "_________\n07:\n\n";
+    
+    divider("07");
     print_07(n);
-    cout << "_________\n08:\n\n";
+    
+    divider("08");
     print_08(n);
-    cout << "_________\n09:\n\n";
+    
+    divider("09");
     print_09(n);
-    cout << "_________\n10:\n\n";
+    
+    divider("10");
     print_10(n);
-    cout << "_________\n11:\n\n";
+    
+    divider("11");
     print_11(n);
-    cout << "_________\n12:\n\n";
-    print_12(n); 
-    cout << "_________\n13:\n\n";
-    print_13(n); 
-    cout << "_________\n14:\n\n";
-    print_14(n); 
-    cout << "_________\n15:\n\n";
-    print_15(n); 
-    cout << "_________\n16:\n\n";
-    print_16(n); 
-    cout << "_________\n17:\n\n";
-    print_17(n); 
-    cout << "_________\n18:\n\n";
-    print_18(n); 
-    cout << "_________\n19:\n\n";
+    
+    divider("12");
+    print_12(n);
+    
+    divider("13"); 
+    print_13(n);
+    
+    divider("14"); 
+    print_14(n);
+    
+    divider("15"); 
+    print_15(n);
+    
+    divider("16"); 
+    print_16(n);
+    
+    divider("17"); 
+    print_17(n);
+    
+    divider("18"); 
+    print_18(n);
+    
+    divider("19"); 
     print_19(n); 
+    
 
     return 0;
+}
+
+void divider(string s) {
+    cout << "\n----------- pattern " << s << ":\n\n";
 }
