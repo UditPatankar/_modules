@@ -283,6 +283,53 @@ void print_19(int n) {
     }
     
 }
+void print_20(int n) {
+
+   for(int i = 1; i <= 2*n; i++) {
+
+      int stars = i;
+      if(i > n) stars = 2*n-i;
+
+      int spaces = 2*(n-i);
+      if(i > n) spaces = 2*(i-n);
+
+      for(int j = 1; j <= stars; j++) cout << "*";
+
+      for(int k = 1; k <= spaces; k++) cout << " ";
+         
+      for(int j = 1; j <= stars; j++) cout << "*";
+
+      cout << "\n";
+   }
+}
+void print_21(int n) {
+
+   for(int i = 1; i <=n; i++) {
+      for(int j = 1; j <= n; j++) {
+         if(i==1 || i==n || j==1 || j==n) {
+            cout << "* ";
+         }
+         else {
+            cout << "  ";
+         }
+      }
+      cout << "\n";
+   } 
+}
+void print_22(int n) {
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= n; j++) {
+            if(i==1 || i==n || j==1 || j==n) cout << "4 ";
+            else if(i==2 || i==n-1 || j==2 || j==n-1) cout << "3 ";
+            else if(i==3 || i==n-2 || j==3 || j==n-2) cout << "2 ";
+            else cout << "1 ";
+        }
+        cout << "\n";
+    }
+   
+}
 
 
 #pragma endregion
@@ -349,7 +396,16 @@ int main() {
     print_18(n);
     
     divider("19"); 
-    print_19(n); 
+    print_19(n);
+
+    divider("20"); 
+    print_20(n); 
+    
+    divider("21"); 
+    print_21(n);
+    
+    divider("22"); 
+    print_22(n); 
     
 
     return 0;
