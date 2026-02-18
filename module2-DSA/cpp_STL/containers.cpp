@@ -187,3 +187,35 @@ void explainQueue() {
     q.pop(); // {2, 8}
     cout << q.front() <<endl; // prints 2
 }
+
+// Priority Queue: it is a data structure that provides fast access to the largest (or smallest) element. It is implemented as a max-heap by default, but can be implemented as a min-heap by using a custom comparator.
+void explainPQ() {
+
+    // Max-Heap
+    priority_queue<int> pq;
+
+    pq.push(5); // {5}
+    pq.push(2); // {5, 2}   
+    pq.push(8); // {8, 5, 2}
+    pq.emplace(1); // {8, 5, 2, 1}
+
+    cout << pq.top() <<endl; // prints 8
+    pq.pop(); // {5, 2, 1}
+    cout << pq.top() <<endl; // prints 5
+
+    // size, swap and empty functions are similar to stack and queue.
+
+    // Min-Heap
+    prirority_queue<int, vector<int>, greater<int>> minpq;
+
+    minpq.push(5); // {5}
+    minpq.push(2); // {2, 5}
+    minpq.push(8); // {2, 5, 8}
+    minpq.emplace(1); // {1, 2, 5, 8}
+    
+    cout << minpq.top() <<endl; // prints 1
+    minpq.pop(); // {2, 5, 8}
+    cout << minpq.top() <<endl; // prints 2
+}
+
+// Set: it is a data structure that stores "unique elements in sorted order". It provides fast access to the elements and allows for efficient insertion and deletion.
