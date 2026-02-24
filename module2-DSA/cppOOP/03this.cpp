@@ -20,28 +20,26 @@ class Point {
    }
 
    // constructor -
-   Point() { cout << "\nConstructor without params."; }
-   Point( int a, int b ) {
-      cout << "Constructor has been invoked." << endl;
-      x = a;
-      y = b;
+   Point() { 
+        // Default constructor w/o any params
+    }
+
+   // using "this" keyword. (in some cases it can be LESS EFFICIENT)
+   Point( int x, int y ) {
+      this -> x = x; // (this): pointing to this object
+      this -> y = y; // this->y is same as (*this).y
+   }
+
+   // Member Initializer List : MODERN WAY
+   Point(int x, int y) : x(x), y(y) {
+        // this -> here variables are initialized with junk first then, gets assigned with the correct value
+        // using Initializer list the variables get created with correct value immediately.
    }
 };
 
 int main() {
 
-   // points are: 
-      // (0, 1)
-      // (2, 2)
-      // (2, 3)
-      // (3, 4)
-      // (4, 5)
-
    vector<Point> points = { {0, 1}, {2, 2}, {2, 3}, {3, 4}, {4, 5} };
-
-   // for(const auto& point : points) {
-   //    point.print(); 
-   // }
 
    for(int i = 0; i < points.size(); i++) {
       points[i].print();
