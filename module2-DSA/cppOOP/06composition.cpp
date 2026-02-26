@@ -60,6 +60,8 @@ int main() {
     Point p = Point(600, 900);
     city2.setLocation(p);
     cout << city2.getLocation().getX() << endl;
+    city2.setPopulation(9000);
+    cout << city2.getPopulation() << endl;
 
     return 0;
 }
